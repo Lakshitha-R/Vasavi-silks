@@ -1,0 +1,385 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	position: absolute;
+	background: #000;
+	z-index: 1000;
+	scroll-behavior: smooth;
+	top: 0;
+	left: 0;
+	padding: 0 100px;
+	width: 100%;
+	box-shadow: 0 16px 28px rgb(0 0 0), 0 10px 10px rgba(0,0,0,0.22);
+	margin: auto;
+	box-sizing: border-box;
+
+}
+header .logo{
+	color: #d3f9ff;
+	height: 80px;
+	font-family: 'Kaushan Script', cursive;
+	line-height: 80px;
+	font-size: 34px;
+	float: left;
+	font-weight: bold;
+}
+header nav{
+	float: right;
+	font-family: 'Patrick Hand', cursive;
+}
+header nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	display: flex;
+}
+header nav ul li{
+	list-style: none;
+	height: 80px;
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	line-height: 80px;
+	padding: 0 15px;
+	color: #d3f9ff;
+	z-index: 1000;
+	text-decoration: none;
+	display: block;
+	transition: .5s;
+
+}
+
+header nav ul li:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #ff236a;
+  color:#ff236a;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header nav ul li:hover:after { 
+  width: 100%; 
+  left: 0; 
+  text-decoration: none;
+  color: #ff236a;
+}
+.menu-toggle{
+	color: #d3f9ff;
+	float: right;
+	line-height: 80px;
+	font-size: 25px;
+	cursor: pointer;
+	display: none;
+}
+@media (max-width: 1000px){
+	header{
+		padding: 0 0;
+	}
+}
+@media (max-width: 900px)
+{
+	header{
+		padding: 0 30px;
+		background-color: #000;
+	}
+	.menu-toggle{
+		display: block;
+	}
+	header nav{
+		position: absolute;
+		width: 100%;
+		height: 320px;
+		/*height: calc(100vh - 50px);*/
+		background-color: #000;
+		top: 0;
+		left: -100%;
+		transition: 0.5s;
+	}
+	header nav.active{ 
+ 	 	text-decoration: none;
+  		left: 0;
+  		top: 80px;
+	}
+	header nav ul{
+		display: block;
+		text-align: center;
+		z-index: 200;	
+	}
+}
+		.container-1 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 800px;
+			background-image: url('loom-4564228_1920.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.container-2 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 800px;
+			background-image: url('pexels-manjeet-singh-yadav-1162983.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.container-3 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 800px;
+			background-image: url('pexels-vaibhav-nagare-5974312.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.container-4 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 800px;
+			background-image: url('pexels-arif-khan-5377395.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.cont1-overlay {
+			position: absolute;
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			height: 300px;
+			background-color: #0000009e;
+			z-index: 2;
+			justify-content: center;
+			align-items: center;
+			color: #d3f9ff;
+			font-family: 'Playball', cursive;
+			font-size: 35px;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+		@media(max-width: 650px){
+			.container-4 {
+				max-height: 400px;
+			}
+			.cont1-overlay {
+				font-size: 20px;
+			}
+		}
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.title-box {
+			width: 50%;
+			margin: auto;
+			position: relative;
+			height: 230px;
+			top: -100px;
+			z-index: 24;
+			box-sizing: border-box;
+			background-color: #fff;
+			color: #d3f9ff;
+			display: flex;
+			justify-content: space-between;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.01), 0 4px 4px rgba(0, 0, 0, 0.02),
+    0 8px 8px rgba(0, 0, 0, 0.03), 0 18px 18px rgba(0, 0, 0, 0.04),
+    0 28px 28px rgba(0, 0, 0, 0.05), 0 38px 38px rgba(0, 0, 0, 0.06);
+		}
+		.title-box .image-logo{
+			width: 230px;
+			height: 180px;
+			margin-top: 25px;
+			margin-left: 25px;
+			display: flex;
+			justify-content: center;align-items: center;
+		}
+		.title-box .image-logo img {
+			height: 200px;
+		}
+		.title-head{
+			text-align: center;
+			font-family: 'Playball', cursive;
+			width: 70%;
+			color: #000;
+			margin-top: 35px;
+		}
+		.title-head h1 {
+			width: 100%;
+			text-align: left;
+		}
+		.title-head h2 {
+			width: 100%;
+			text-align: left;
+		}
+		@media(max-width: 1024px){
+			.title-box{
+				width: 60%;
+			}
+		}
+		@media(max-width: 800px){
+			.title-box{
+				width: 80%;
+			}
+		}
+		@media(max-width: 590px){
+			.title-head{
+				margin-top: 15px;
+			}
+			.title-head h1{
+				font-size: 22px;
+			}
+			.title-head h2{
+				font-size: 18px;
+			}
+			.title-box .image-logo{
+				width: 100px;
+			}
+			.title-box .image-logo img{
+				height: 100px;
+			}
+		}
+
+		.owl-categories{
+			width: 80%;
+			margin: auto;
+			margin-bottom: 50px;
+		}
+		.owl-categories h2{
+			text-align: center;
+			font-family: 'Playball', cursive;
+			font-size: 35px; 
+		}
+		.item a img{
+			height: 250px;
+			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.01), 0 4px 4px rgba(0, 0, 0, 0.02),
+    0 8px 8px rgba(0, 0, 0, 0.03), 0 18px 18px rgba(0, 0, 0, 0.04),
+    0 28px 28px rgba(0, 0, 0, 0.05), 0 38px 38px rgba(0, 0, 0, 0.06);
+    	transition: .5s;
+		}
+		.item a img:hover{
+			filter: brightness(50%);
+		}
+
+		.container-5 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 700px;
+			background-image: url('loom-4564228_1920.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+
+		}
+
+		.cont2-overlay {
+			position: absolute;
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			min-height: 700px;
+			background-color: #0000009e;
+			z-index: 2;
+			justify-content: center;
+			align-items: center;
+			color: #d3f9ff;
+			font-family: 'Playball', cursive;
+			font-size: 30px;
+			letter-spacing: 2px;
+			text-align: center;
+		}
+		.view-all{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+			margin-bottom: 50px;
+		}
+		.view-all a{
+			font-size: 20px;
+		}
+		.container-6 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			min-height: 700px;
+			background-image: url('https___www.lifeofpix.com_wp-content_uploads_2018_12_10-Anguillara-Sabazia-Rome.jpg');
+			background-size: cover;background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+
+		}
+		@media(max-width: 600px)
+		{
+			.container-5 {
+				min-height: 500px;
+			}
+			.container-6 {
+				min-height: 500px;
+			}
+			.cont2-overlay{
+				font-size: 20px;
+				min-height: 500px;
+			}
+		}
+
+		.main {
+				width: 60%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				margin: auto;
+				margin-bottom: 60px;
+			}
+			.child1{
+				width: 42%;
+				display: flex;
+				flex-wrap: wrap;
+				padding-top: 50px;
+				justify-content: space-around;
+			}
+			.image {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				z-index: 800;
+			}
+			.he1 {
+				color: white;
+				line-height: 75px;
+				width: 100%;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 900;
+				font-size: 25px;
+				text-align: center;
+				z-index: 800;
+			}
+			.he2 {
+				color: #000;
+				width: 75%;
+				margin: auto;
+				font-family: 'Raleway', sans-serif;
+				font-size: 14px;
+				text-align: center;
+				z-index: 800;
+				line-height: 20px;
+			}
+			.About-Us {
+				font-size: 40px;
+				font-family: 'Playball', cursive;
+				text-align: center; 
+			}
